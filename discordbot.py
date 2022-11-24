@@ -29,6 +29,6 @@ async def mvp(ctx, *, message):
 async def on_ready():
     await client.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name="si alguien mata algo"))
 
-client.run('MTAxMTkxNjgzODM0NDYwOTgxMg.GB4iFY.gSCA0lrCX_O_NmHEip0JethrBRAh5AokDuGlU0')
+client.run('YourTokenHere')
 
 
