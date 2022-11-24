@@ -21,13 +21,13 @@ async def mvp(ctx, *, message):
                 n = int(mvp.spawn)
                 respawn = hour + timedelta(minutes=n)
                 respawn_clean_hour = respawn.strftime('%H:%M:%S')
-                await ctx.send(f' MVP {context.title()} regresará a las {respawn_clean_hour}')
+                await ctx.send(f' MVP {context.title()} will respawn at {respawn_clean_hour}')
             else:
-                await ctx.send(f'El MVP {context.title()} regresará tras {mvp.spawn} mob kills.')
+                await ctx.send(f'El MVP {context.title()} will come back after {mvp.spawn} mob kills.')
 
 @client.event
 async def on_ready():
-    await client.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name="si alguien mata algo"))
+    await client.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name="Waiting for those MVP hunters"))
 
 client.run('YourTokenHere')
 
